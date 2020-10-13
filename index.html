@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новостное агенство</title>
+
+    <link rel="stylesheet" href="libs/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="https://code.jquery.com/color/jquery.color-2.2.0.min.js" integrity="sha256-aSe2ZC5QeunlL/w/7PsVKmV+fa0eDbmybn/ptsKHR6I=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <article class="upper-article">
+        <div class="article-content container">
+            <p>
+                Самые <a href="#">свежие новости</a> в реальном времени
+            </p>
+            <p class="datetime">
+                12:30 09.10.2020
+            </p>
+        </div>
+    </article>
+    <header class="header-desktop">
+        <article class="sub-article container">
+            <article class="search">
+                <div>
+                    <div class="logo">
+                        <img src="imgs/header/internet-logo.png" alt="">
+                        <p>
+                            Новостное
+                            агентство
+                        </p>
+                    </div>
+                    <div class="region-select">
+                        <select class="selector" name="" id="">
+                            <option value="" selected>Москва</option>
+                            <option value="">Самара</option>
+                            <option value="">Донецк</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <div class="weather-info">
+                        <div>
+                            <img src="imgs/header/cloudy.png" alt="">
+                        </div>
+                        <div>
+                            <p>+22 °C</p>
+                        </div>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Поиск по сайту">
+                    </div>
+            </article>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li class="slash">/</li>
+                    <li><a href="#">Политика</a></li>
+                    <li class="slash">/</li>
+                    <li><a href="#">Общество</a></li>
+                    <li class="slash">/</li>
+                    <li><a href="#">Экономика</a></li>
+                    <li class="slash">/</li>
+                    <li><a href="#">В мире</a></li>
+                    <li class="slash">/</li>
+                    <li><a href="#">Проишествия</a></li>
+                    <li class="slash">/</li>
+                    <li><a href="#">Спорт</a></li>
+                    <li class="slash">/</li>
+                    <li><a href="#">Наука</a></li>
+                    <li class="slash">/</li>
+                    <li><a href="#">Туризм</a></li>
+                </ul>
+            </nav>
+        </article>
+    </header>
+
+    <header class="header-mobile">
+        <article class="header-mobile-up container">
+            <img class="menu-btn active" src="imgs/header/menu.png" alt="">
+
+            <div class="logo">
+                <img src="imgs/header/internet-logo.png" alt="">
+                <p>
+                    Новостное агентство
+                </p>
+            </div>
+            
+            <div class="search-bar">
+                <input id="search-btn" type="text" placeholder="Поиск по сайту">
+            </div>
+        </article>
+        <nav class="nav-mobile">
+            <ul>
+                <li>
+                    <a href="">Главная</a>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Политика</a>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Общество</a>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Экономика</a>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">В мире</a>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Проишествия</a>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Спорт</a>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Наука</a>
+                </li>
+                <li>
+                    <hr>
+                </li>
+                <li>
+                    <a href="">Туризм</a>
+                </li>
+            </ul>
+            
+            <div class="region-select">
+                <select class="selector" name="" id="">
+                    <option value="" selected>Москва</option>
+                    <option value="">Самара</option>
+                    <option value="">Донецк</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+    <div class="sub-header-mobile container">
+        <div class="date-mobile">
+            <p>
+                13 Окт, Вт
+            </p>
+        </div>
+        <div class="time-mobile">
+            <p>
+                <img src="imgs/main/content/clock-blue.png" alt="">
+                17:45
+            </p>
+        </div>
+        <div class="weather-mobile">
+            <p>
+                <img src="imgs/header/cloudy.png" alt="">
+                +22 °C
+            </p>
+        </div>
+    </div>
+    <main>
+        <section class="main container">
+            <article class="news">
+                <div class="block-title">
+                    <h2>
+                        Новости дня
+                    </h2>
+                </div>
+                <div class="news-content-items">
+                    <article>
+                        <div class="news-card-up">
+                            Кот Ахилл предсказал
+                            победу российской сборной
+                            над Египтом на ЧМ-2018
+                        </div>
+                        <div class="news-card-down">
+                            <h4 class="category">
+                                / Политика
+                            </h4>
+                            <p>
+                                <img src="imgs/main/content/clock-blue.png" alt=""> 10:48
+                            </p>
+                            <p>
+                                <img src="imgs/main/content/chat-blue.png" alt=""> 15
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="news-card-up">
+                            Кот Ахилл предсказал
+                            победу российской сборной
+                            над Египтом на ЧМ-2018
+                        </div>
+                        <div class="news-card-down">
+                            <h4 class="category">
+                                / Политика
+                            </h4>
+                            <p>
+                                <img src="imgs/main/content/clock-blue.png" alt=""> 10:48
+                            </p>
+                            <p>
+                                <img src="imgs/main/content/chat-blue.png" alt=""> 15
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="news-card-up">
+                            Кот Ахилл предсказал
+                            победу российской сборной
+                            над Египтом на ЧМ-2018
+                        </div>
+                        <div class="news-card-down">
+                            <h4 class="category">
+                                / Политика
+                            </h4>
+                            <p>
+                                <img src="imgs/main/content/clock-blue.png" alt=""> 10:48
+                            </p>
+                            <p>
+                                <img src="imgs/main/content/chat-blue.png" alt=""> 15
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="news-card-up">
+                            Кот Ахилл предсказал
+                            победу российской сборной
+                            над Египтом на ЧМ-2018
+                        </div>
+                        <div class="news-card-down">
+                            <h4 class="category">
+                                / Политика
+                            </h4>
+                            <p>
+                                <img src="imgs/main/content/clock-blue.png" alt=""> 10:48
+                            </p>
+                            <p>
+                                <img src="imgs/main/content/chat-blue.png" alt=""> 15
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="news-card-up">
+                            Кот Ахилл предсказал
+                            победу российской сборной
+                            над Египтом на ЧМ-2018
+                        </div>
+                        <div class="news-card-down">
+                            <h4 class="category">
+                                / Политика
+                            </h4>
+                            <p>
+                                <img src="imgs/main/content/clock-blue.png" alt=""> 10:48
+                            </p>
+                            <p>
+                                <img src="imgs/main/content/chat-blue.png" alt=""> 15
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="news-card-up">
+                            Кот Ахилл предсказал
+                            победу российской сборной
+                            над Египтом на ЧМ-2018
+                        </div>
+                        <div class="news-card-down">
+                            <h4 class="category">
+                                / Политика
+                            </h4>
+                            <p>
+                                <img src="imgs/main/content/clock-blue.png" alt=""> 10:48
+                            </p>
+                            <p>
+                                <img src="imgs/main/content/chat-blue.png" alt=""> 15
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="news-card-up">
+                            Кот Ахилл предсказал
+                            победу российской сборной
+                            над Египтом на ЧМ-2018
+                        </div>
+                        <div class="news-card-down">
+                            <h4 class="category">
+                                / Политика
+                            </h4>
+                            <p>
+                                <img src="imgs/main/content/clock-blue.png" alt=""> 10:48
+                            </p>
+                            <p>
+                                <img src="imgs/main/content/chat-blue.png" alt=""> 15
+                            </p>
+                        </div>
+                    </article>
+                </div>
+                <div class="button">
+                    Все новости
+                </div>
+            </article>
+            <article class="content">
+                <article id="z0" class="1 first content-card">
+                    <div class="card-up">
+                        <h4 class="category">
+                            / Политика
+                        </h4>
+                        <h2 class="content-title">
+                            В Крыму отреагировали
+                            на слова Кравчука
+                            о возврате полуострова
+                        </h2>
+                    </div>
+                    <div class="card-down">
+                        <p>
+                            19 июня 2020
+                        </p>
+                        <p>
+                            <img src="imgs/main/content/clock.png" alt=""> 10:48
+                        </p>
+                    </div>
+                </article>
+                <article id="z1" class="content-card">
+                    <div>
+                        <a href="#"><img src="imgs/main/content/Layer_3.png" alt=""></a>
+                    </div>
+                    <div class="small-card-up">
+                        Алексей Навальный объявил
+                        акцию против пенсионной
+                        реформы 1 июля
+                    </div>
+                    <div class="small-card-down">
+                        <h4 class="category">
+                            / Политика
+                        </h4>
+                        <p>
+                            <img src="imgs/main/content/clock-blue.png" alt=""> 10:48
+                        </p>
+                        <p>
+                            <img src="imgs/main/content/chat-blue.png" alt=""> 17
+                        </p>
+                    </div>
+                </article>
+                <article id="z2" class="content-card">
+                    <div>
+                        <a href="#"><img src="imgs/main/content/Layer_3.png" alt=""></a>
+                    </div>
+                    <div class="small-card-up">
+                        Алексей Навальный объявил
+                        акцию против пенсионной
+                        реформы 1 июля
+                    </div>
+                    <div class="small-card-down">
+                        <h4 class="category">
+                            / Политика
+                        </h4>
+                        <p>
+                            <img src="imgs/main/content/clock-blue.png" alt=""> 10:48
+                        </p>
+                        <p>
+                            <img src="imgs/main/content/chat-blue.png" alt=""> 17
+                        </p>
+                    </div>
+                </article>
+                <article id="z3" class="content-card">
+                    <div>
+                        <a href="#"><img src="imgs/main/content/Layer_3.png" alt=""></a>
+                    </div>
+                    <div class="small-card-up">
+                        Алексей Навальный объявил
+                        акцию против пенсионной
+                        реформы 1 июля
+                    </div>
+                    <div class="small-card-down">
+                        <h4 class="category">
+                            / Политика
+                        </h4>
+                        <p>
+                            <img src="imgs/main/content/clock-blue.png" alt=""> 10:48
+                        </p>
+                        <p>
+                            <img src="imgs/main/content/chat-blue.png" alt=""> 17
+                        </p>
+                    </div>
+                </article>
+                <article id="z4" class="content-card">
+                    <div>
+                        <a href="#"><img src="imgs/main/content/Layer_3.png" alt=""></a>
+                    </div>
+                    <div class="small-card-up">
+                        Алексей Навальный объявил
+                        акцию против пенсионной
+                        реформы 1 июля
+                    </div>
+                    <div class="small-card-down">
+                        <h4 class="category">
+                            / Политика
+                        </h4>
+                        <p>
+                            <img src="imgs/main/content/clock-blue.png" alt=""> 10:48
+                        </p>
+                        <p>
+                            <img src="imgs/main/content/chat-blue.png" alt=""> 17
+                        </p>
+                    </div>
+                </article>
+            </article>
+
+            <article class="advertisement">
+                <article class="ad-container ad-container-1">
+                    <img src="imgs/main/ad-imgs/Layer_13.png" alt="">
+                </article>
+                <article class="ad-container ad-container-2">
+                    <img src="imgs/main/ad-imgs/Layer_14.png" alt="">
+                </article>
+            </article>
+        </section>
+        <section class="sub-main container">
+            <article class="left">
+                <article>
+                    <h4 class="category">
+                        / Политика
+                    </h4>
+                    <h2>
+                        Пекин обвинил Вашингтон <br>
+                        в развязывании торговой <br>
+                        войны
+                    </h2>
+                    <div class="stats">
+                        <p>
+                            19 Июня 2018
+                        </p>
+                        <p>
+                            <img src="imgs/main/content/chat.png" alt=""> 15
+                        </p>
+                    </div>
+                    <p>
+                        Министерство коммерции Китая заявило, что Пекин примет «качественные»
+                        и «количественные» меры, если президент США Дональд Трамп введет
+                        дополнительные пошлины на китайские товары
+                    </p>
+                </article>
+            </article>
+            <article class="right">
+                <div class="right-title">
+                    <h2>Самые читаемые новости</h2>
+                </div>
+                <div class="right-items">
+                    <article>
+                        <h3>
+                            В Турции пообещали найти альтернативу из-за
+                            отказа США поставить F-35
+                        </h3>
+                        <div>
+                            <h4 class="category">
+                                / Политика
+                            </h4>
+                            <p>
+                                <img src="imgs/main/content/clock-blue.png" alt=""> 11:39
+                            </p>
+                            <p>
+                                <img src="imgs/main/content/chat-blue.png" alt=""> 25
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>
+                            В Турции пообещали найти альтернативу из-за
+                            отказа США поставить F-35
+                        </h3>
+                        <div>
+                            <h4 class="category">
+                                / Политика
+                            </h4>
+                            <p>
+                                <img src="imgs/main/content/clock-blue.png" alt=""> 11:39
+                            </p>
+                            <p>
+                                <img src="imgs/main/content/chat-blue.png" alt=""> 25
+                            </p>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>
+                            В Турции пообещали найти альтернативу из-за
+                            отказа США поставить F-35
+                        </h3>
+                        <div>
+                            <h4 class="category">
+                                / Политика
+                            </h4>
+                            <p>
+                                <img src="imgs/main/content/clock-blue.png" alt=""> 11:39
+                            </p>
+                            <p>
+                                <img src="imgs/main/content/chat-blue.png" alt=""> 25
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- <footer>
+        <article class="upper-footer container">
+            <article class="footer-left">
+                <div>
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Политика</a></li>
+                        <li><a href="#">Общество</a></li>
+                        <li><a href="#">Экономика</a></li>
+                        <li><a href="#">В мире</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><a href="#">Путешествия</a></li>
+                        <li><a href="#">Спорт</a></li>
+                        <li><a href="#">Наука</a></li>
+                        <li><a href="#">Туризм</a></li>
+                    </ul>
+                </div>
+            </article>
+            <article class="footer-middle">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="logo logo-footer">
+                                <img src="imgs/header/internet-logo.png" alt="">
+                                <p>
+                                    Новостное <br> агенство
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#">Об агенстве</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Опубликовать новость</a></li>
+                </ul>
+            </article>
+            <article class="footer-right">
+                <ul>
+                    <li><a href="#"><img src="imgs/footer/vk.png" alt=""></a></li>
+                    <li><a href="#"><img src="imgs/footer/fb.png" alt=""></a></li>
+                    <li><a href="#"><img src="imgs/footer/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="imgs/footer/instagramm.png" alt=""></a></li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="footer-contacts">
+                                <img src="imgs/footer/call-answer.png" alt="">
+                                <p>
+                                    +7 (499) 995-55-55
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="footer-contacts">
+                                <img src="imgs/footer/envelope.png" alt="">
+                                <p>
+                                    info@agency.ru
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </article>
+        <article class="sub-footer">
+            © Новостное агентство, 2017-2018 все права защищены
+        </article>
+    </footer> -->
+</body>
+
+</html>
