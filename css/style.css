@@ -179,7 +179,6 @@ header nav {
     background-color: unset;
 }
 
-
 .menu-btn {
     width: 25px;
     height: 25px;
@@ -541,9 +540,14 @@ main {
     height: 11px;
 }
 
-footer {
+.footer-desktop,
+.footer-mobile {
     color: white;
     background-color: #00122f;
+}
+
+.footer-desktop article {
+    padding: 10px;
 }
 
 .upper-footer {
@@ -560,9 +564,12 @@ footer {
     display: flex;
 }
 
-.footer-left ul,
-.footer-middle ul,
-.footer-right ul {
+.footer-left ul li,
+.footer-middle ul li,
+.footer-right ul li,
+.footer-mobile-top ul li,
+.footer-mobile-middle ul li,
+.footer-mobile-bottom ul li {
     list-style: none;
     font-size: 16px;
     letter-spacing: 0.32px;
@@ -578,17 +585,20 @@ footer {
 
 .footer-left ul li,
 .footer-middle ul li,
-.footer-right ul li {
+.footer-right ul li,
+.footer-mobile-top ul li,
+.footer-mobile-middle ul li,
+.footer-mobile-bottom ul li {
     color: white;
     text-decoration: none;
     margin-bottom: 19px;
 }
 
-footer a {
+.footer-desktop a,
+.footer-mobile a {
     color: white;
     text-decoration: none;
 }
-
 
 .logo-footer p {
     color: white;
@@ -629,4 +639,40 @@ footer a {
 
 .footer-contacts p {
     margin-left: 20px;
+}
+
+.footer-mobile article {
+    padding: 30px;
+}
+
+.footer-mobile-top {
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+.footer-mobile-top li {
+    margin-right: 25px;
+}
+
+.footer-mobile-middle-menu ul {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-mobile-middle-menu li {
+    width: 125px;
+}
+
+.footer-mobile-links {
+    margin-top: 10px;
+    display: flex;
+}
+
+.footer-mobile-links li {
+    margin-right: 20px;
+}
+
+.sub-footer {
+    border-bottom: 1px solid gray;
 }

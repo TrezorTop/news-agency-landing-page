@@ -1,6 +1,16 @@
 $(document).ready(() => {
 
+    setInterval(timeAndDateController, 1000)
+
     $('.menu-btn').click(menuController);
+
+    function timeAndDateController() {
+        var nowTimeFormatted = new Date().toLocaleTimeString().slice(0, -3);
+        $('.time-span').text(nowTimeFormatted);
+
+        var nowDateFormatted = new Date().toLocaleDateString();
+        $('.date-span').text(nowDateFormatted);
+    }
 
     function menuController() {
         if ($('.menu-btn').hasClass('active')) {

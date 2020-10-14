@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="css/media.css">
 
     <script src="libs/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/color/jquery.color-2.2.0.min.js"
+        integrity="sha256-aSe2ZC5QeunlL/w/7PsVKmV+fa0eDbmybn/ptsKHR6I=" crossorigin="anonymous"></script>
     <script src="scripts/script.js"></script>
-    <script src="https://code.jquery.com/color/jquery.color-2.2.0.min.js" integrity="sha256-aSe2ZC5QeunlL/w/7PsVKmV+fa0eDbmybn/ptsKHR6I=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -23,7 +24,7 @@
                 Самые <a href="#">свежие новости</a> в реальном времени
             </p>
             <p class="datetime">
-                12:30 09.10.2020
+                <span class="time-span"></span> <span class="date-span"></span>
             </p>
         </div>
     </article>
@@ -94,7 +95,7 @@
                     Новостное агентство
                 </p>
             </div>
-            
+
             <div class="search-bar">
                 <input id="search-btn" type="text" placeholder="Поиск по сайту">
             </div>
@@ -153,7 +154,7 @@
                     <a href="">Туризм</a>
                 </li>
             </ul>
-            
+
             <div class="region-select">
                 <select class="selector" name="" id="">
                     <option value="" selected>Москва</option>
@@ -166,13 +167,13 @@
     <div class="sub-header-mobile container">
         <div class="date-mobile">
             <p>
-                13 Окт, Вт
+                <span class="date-span-mobile">13 Окт, Вт</span>
             </p>
         </div>
         <div class="time-mobile">
             <p>
                 <img src="imgs/main/content/clock-blue.png" alt="">
-                17:45
+                <span class="time-span"></span>
             </p>
         </div>
         <div class="weather-mobile">
@@ -524,7 +525,8 @@
             </article>
         </section>
     </main>
-    <!-- <footer>
+
+    <footer class="footer-desktop">
         <article class="upper-footer container">
             <article class="footer-left">
                 <div>
@@ -596,9 +598,89 @@
             </article>
         </article>
         <article class="sub-footer">
-            © Новостное агентство, 2017-2018 все права защищены
+            © Новостное агентство, 2017-2021 все права защищены
         </article>
-    </footer> -->
+    </footer>
+
+    <footer class="footer-mobile">
+        <article class="footer-mobile-top container">
+            <div>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Политика</a></li>
+                    <li><a href="#">Общество</a></li>
+                    <li><a href="#">Экономика</a></li>
+                    <li><a href="#">В мире</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="#">Путешествия</a></li>
+                    <li><a href="#">Спорт</a></li>
+                    <li><a href="#">Наука</a></li>
+                    <li><a href="#">Туризм</a></li>
+                </ul>
+            </div>
+        </article>
+        <article class="footer-mobile-middle container">
+            <div class="logo logo-footer logo-footer-mobile">
+                <img src="imgs/header/internet-logo.png" alt="">
+                <p>
+                    Новостное <br> агенство
+                </p>
+            </div>
+            <div class="footer-mobile-middle-menu">
+                <ul>
+                    <li>
+                        <a href="#">Об агенстве</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li>
+                        <a href="#">Опубликовать новость</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="footer-mobile-links">
+                    <li><a href="#"><img src="imgs/footer/vk.png" alt=""></a></li>
+                    <li><a href="#"><img src="imgs/footer/fb.png" alt=""></a></li>
+                    <li><a href="#"><img src="imgs/footer/twitter.png" alt=""></a></li>
+                    <li><a href="#"><img src="imgs/footer/instagramm.png" alt=""></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="footer-contacts">
+                                <img src="imgs/footer/call-answer.png" alt="">
+                                <p>
+                                    +7 (499) 995-55-55
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="footer-contacts">
+                                <img src="imgs/footer/envelope.png" alt="">
+                                <p>
+                                    info@agency.ru
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <hr>
+        <article class="sub-footer">
+            © Новостное агентство, 2017-2021 все права защищены
+        </article>
+    </footer>
 </body>
 
 </html>
