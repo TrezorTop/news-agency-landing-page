@@ -18,8 +18,6 @@ $(document).ready(() => {
 
         $('#search-btn').toggleClass('active');
 
-        console.log('123')
-
         if ($('#search-btn').hasClass('active')) {
             $('.logo , .menu-btn').fadeOut(400, function () {
                 $('#search-btn').animate({
