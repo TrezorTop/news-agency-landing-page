@@ -1,6 +1,6 @@
 $(document).ready(() => {
 
-    setInterval(timeAndDateController, 1000)
+    setInterval(timeAndDateController, 500)
 
     $('.menu-btn').click(menuController);
 
@@ -10,6 +10,10 @@ $(document).ready(() => {
 
         var nowDateFormatted = new Date().toLocaleDateString();
         $('.date-span').text(nowDateFormatted);
+        $('.time-span').text(nowTimeFormatted);
+
+        var nowDateMobileFormatted = new Date().toLocaleDateString().slice(0, -5);
+        $('.date-span-mobile').text(nowDateMobileFormatted);
     }
 
     function menuController() {
